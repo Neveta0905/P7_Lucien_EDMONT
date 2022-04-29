@@ -1,0 +1,82 @@
+.Post {
+  background: white;
+  border: black 1px solid;
+  padding-top: 0px;
+  margin: auto;
+  margin-top: 5px;
+  justify-content: center;
+  width: calc(100% - 2px); }
+  .Post_infos {
+    display: flex;
+    justify-content: space-around;
+    background: #132544;
+    color: white; }
+    .Post_infos_author {
+      display: flex;
+      width: 50%; }
+      .Post_infos_author a {
+        color: white;
+        display: flex;
+        margin-top: auto;
+        margin-bottom: auto; }
+      .Post_infos_author img {
+        max-width: 50px;
+        max-height: 50px;
+        object-fit: contain; }
+    .Post_infos_topic {
+      width: 50%;
+      display: flex;
+      flex-direction: row-reverse; }
+      .Post_infos_topic img {
+        max-width: 50px;
+        max-height: 50px;
+        object-fit: contain;
+        margin-right: 5px; }
+      .Post_infos_topic a {
+        color: white;
+        display: flex;
+        margin-top: auto;
+        margin-bottom: auto;
+        flex-direction: row-reverse; }
+      .Post_infos_topic p {
+        width: 200px;
+        text-align: center;
+        flex: 1; }
+  .Post_comments {
+    background: white;
+    border-top: 1px dotted black;
+    border-bottom: 1px dotted black;
+    display: flex;
+    flex-direction: column-reverse; }
+    .Post_comments_comment {
+      display: flex;
+      flex-direction: row;
+      margin-top: auto;
+      margin-bottom: auto; }
+      @media screen and (max-width: 600px) {
+        .Post_comments_comment {
+          flex-direction: column; } }
+      .Post_comments_comment_user {
+        margin-left: 5px;
+        margin-right: 15px;
+        margin-top: 11px;
+        color: #132544;
+        font-size: 20px; }
+  .Post form {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px; }
+    .Post form input[type='image'] {
+      height: 30px;
+      margin-left: 10px;
+      margin-right: 10px; }
+    .Post form input[type='text'] {
+      flex: 1;
+      margin-left: 10px; }
+    .Post form label {
+      margin-left: 5px; }
+
+.topic_comment {
+  border-top: solid 1px black; }

@@ -1,0 +1,19 @@
+.Form {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  margin: auto; }
+  .Form .ConnexionForm {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px; }
+    .Form .ConnexionForm_inputs {
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .Form .ConnexionForm_inputs label {
+        color: blue;
+        margin-right: 10px;
+        font-size: 20px; }

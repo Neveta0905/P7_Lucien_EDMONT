@@ -1,0 +1,55 @@
+.App{
+	display: flex;
+	flex-direction: column;
+}
+
+.wall{
+	padding: 15px;
+
+	.posts{
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.writer{
+	border: solid black 1px;
+	display: flex;
+	flex-direction: row;
+	padding: 15px;
+
+	@media screen and (max-width: 400px) {
+		flex-direction: column;
+	}
+
+	&_type{
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		max-width: 100%;
+
+		&_content{
+			background-color: #addde5;
+			font-size: 15px;
+			resize: none;
+			border:none
+		}
+
+		&_topic{
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+	}
+
+	&_sender{
+		width: 50px;
+		height: 50px;
+		margin: auto;
+		margin-left: 15px;
+
+		@media screen and (max-width: 400px) {
+			margin: auto;
+			margin-top: 10px;
+		}
+	}
+}

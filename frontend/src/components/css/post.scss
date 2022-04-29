@@ -1,0 +1,108 @@
+.Post{
+	background:white;
+	border: black 1px solid;
+	padding-top: 0px;
+	margin: auto;
+	margin-top: 5px;
+	justify-content: center;
+	width: calc(100% - 2px);
+
+	&_infos{
+		display: flex;
+		justify-content: space-around;
+		background:#132544;
+		color: white;
+
+		&_author{
+			display: flex;
+			width: 50%;
+			a{
+				color: white;
+				display: flex;
+				margin-top: auto;
+				margin-bottom: auto;
+			}
+			img{
+				max-width: 50px;
+				max-height: 50px;
+				object-fit: contain;
+			}
+		}
+		&_topic{
+			width: 50%;
+			display: flex;
+			flex-direction: row-reverse;
+			img{
+				max-width: 50px;
+				max-height: 50px;
+				object-fit: contain;
+				margin-right: 5px;
+			}
+			a{
+				color: white;
+				display: flex;
+				margin-top: auto;
+				margin-bottom: auto;
+				flex-direction: row-reverse;
+			}
+			p{
+				width: 200px;
+				text-align: center;
+				flex: 1;
+			}
+		}
+	}
+	&_content{
+	}
+	&_comments{
+		background: white;
+		border-top:1px dotted black;
+		border-bottom:1px dotted black;
+		display: flex;
+		flex-direction: column-reverse;
+		&_comment{
+			display: flex;
+			flex-direction: row;
+			margin-top: auto;
+			margin-bottom: auto;
+			@media screen and (max-width: 600px) {		
+				flex-direction: column;
+			}
+
+			&_user{
+				margin-left: 5px;
+				margin-right: 15px;
+				margin-top: 11px;
+				color: #132544;
+				font-size: 20px;
+			}
+		}
+	}
+
+	form{
+		display: flex;
+		justify-content: center;
+		height: 30px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		input[type='image']{
+			height: 30px;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		input[type='text']{
+			flex: 1;
+			margin-left: 10px;
+		}
+
+		label{
+			margin-left: 5px;
+		}
+	}
+}
+
+
+
+.topic_comment{
+	border-top: solid 1px black;
+}

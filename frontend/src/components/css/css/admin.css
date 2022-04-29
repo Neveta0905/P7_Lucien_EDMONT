@@ -1,0 +1,44 @@
+.admin_accept {
+  background: green;
+  border: none;
+  color: white;
+  height: 50px;
+  border-radius: 15px;
+  font-size: 17px;
+  margin-right: 15px;
+  cursor: pointer; }
+.admin_delete {
+  background: #d10505;
+  border: none;
+  color: white;
+  height: 50px;
+  border-radius: 15px;
+  font-size: 17px;
+  margin-right: 15px;
+  cursor: pointer; }
+.admin_article {
+  border: solid 1px black;
+  background: white;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  padding-bottom: 15px; }
+.admin_checkadmin {
+  margin-bottom: 10px; }
+
+.button_layer {
+  display: flex;
+  flex-direction: column; }
+  .button_layer button {
+    margin: auto;
+    margin-bottom: 15px;
+    width: 350px;
+    font-size: 18px;
+    border-radius: 15px;
+    border: #132544 solid 1px;
+    background: #132544;
+    color: white;
+    padding: 10px; }
+    .button_layer button:hover {
+      border: white solid 1px;
+      cursor: pointer; }
