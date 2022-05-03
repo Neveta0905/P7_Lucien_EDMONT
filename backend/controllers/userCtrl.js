@@ -37,10 +37,10 @@ exports.login = (req,res) =>{
 		bcrypt.compare(req.body.password,user.password)
 		.then(valid =>{
 			if(!valid){
-				return res.status(401).json(error)
+				return res.status(401).json({error:error})
 			}
 			if (user.moderated === 0)
-				res.status(403).json({message:'Wait for your account\'s validation'})
+				res.status(403).json({error:'Wait for your account\'s validation'})
 			else{
 				res.status(200).json({
 					userId:user.id,

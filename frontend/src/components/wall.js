@@ -10,7 +10,6 @@ const Wall = (props) => {
 	const [messages,setMessages] = useState({})
 
 	useEffect(() => { // Cherche les post modérés et commentaires modérés en bonus
-		console.log('wall' + token)
 		return axios.get('http://localhost:3000/api/post/moderated/3',{
 			headers:{
 				'Authorization' : 'Bearer ' + token

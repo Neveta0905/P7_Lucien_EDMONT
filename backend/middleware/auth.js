@@ -6,6 +6,7 @@ exports.all = (req, res, next) => {
     const decodedToken = jwt.verify(token, process.env.TokenCrypter);
     const userId = decodedToken.userId.toString();
     req.auth = { userId }
+    console.log(req.headers.authorization)
     if (req.body.userId && req.body.userId !== userId) {
       throw 'Invalid user ID';
     } else {

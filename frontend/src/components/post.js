@@ -53,7 +53,7 @@ const Post = (props) => {
 			})
 	  	.catch(error => {return error})
 	}, [])
-
+	
 	return(
 		<Fragment>
 			{

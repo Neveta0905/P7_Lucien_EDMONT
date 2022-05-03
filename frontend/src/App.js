@@ -41,7 +41,7 @@ function App() {
     } else{
       let loger =  await authentificator('http://localhost:3000/api/auth/login',mail,password)
       if (!loger.userId || !loger.role || !loger.token)
-        alert('Mauvais Email ou mot de passe')
+        alert(loger.error)
       else{
         sessionStorage.setItem('userId', loger.userId)
         sessionStorage.setItem('userRole', loger.role)
