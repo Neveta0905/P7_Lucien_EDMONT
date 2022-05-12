@@ -6,7 +6,7 @@ exports.all = (req, res, next) => {
     const decodedToken = jwt.verify(token, process.env.TokenCrypter);
     const userId = decodedToken.userId.toString();
     req.auth = { userId }
-    console.log(req.headers.authorization)
+
     if (req.body.userId && req.body.userId !== userId) {
       throw 'Invalid user ID';
     } else {
@@ -23,7 +23,7 @@ exports.admin = (req, res, next) => { // Faut envoyer authorization : token + ro
 
   const token1 = req.headers.authorization.split(' ')[1];
   const decodedToken1 = jwt.verify(token1, process.env.TokenCrypter); 
-  console.log(decodedToken1)
+
   try {
     const token = req.headers.authorization.split(' ')[1];
     const decodedToken = jwt.verify(token, process.env.TokenCrypter);
